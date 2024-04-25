@@ -1,0 +1,35 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
+
+<!-- Carousel -->
+<div class="slider-container">
+  <div class="slider">
+    <div
+      class="slide"
+      *ngFor="let slide of slides; let i = index"
+      [class.active]="i === currentIndex"
+    >
+      <img
+        *ngIf="i === currentIndex"
+        [src]="slide.image"
+        alt="{{ slide.caption }}"
+      />
+    </div>
+  </div>
+  <div class="controls">
+      <button type="button" class="btn-float-left" (click)="prevSlide()">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button type="button" class="btn-float-right" (click)="nextSlide()">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+  </div>
+</div>
+
+<div class="first-text">
+  <h1>Nature at it's best.</h1>
+  <h1>Let it Survive so that we survive</h1>
+  <h1>Enjoy things at your pace</h1>
+</div>
