@@ -1,0 +1,60 @@
+.flex-container{
+    display: flex;
+    color: aliceblue;
+    flex-wrap: wrap;
+}
+
+.container{
+    background-color: rgb(116, 121, 123);
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li:hover{
+    background-color: rgb(126, 131, 131);
+}
+
+.address{
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+img{
+    margin: 20px;
+    margin-top: 40px;
+    width: 200px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-address-book{
+    display: flex;
+    font-size: small;
+}
+
+@media (max-width: 768px) {
+    .flex-container{
+        display: inline;
+    }
+  }

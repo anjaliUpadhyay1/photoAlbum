@@ -1,0 +1,14 @@
+.container {
+  /* display: flex; */
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .slider-text {
+    margin-bottom: 20px;
+  }
+
+  .collage {
+    margin-top: 20px;
+  }
+}

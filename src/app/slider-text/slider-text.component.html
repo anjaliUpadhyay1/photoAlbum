@@ -1,0 +1,42 @@
+<h2>SLIDER-TEXT SECTION:</h2>
+<div class="container" id="testimonals">
+  <div class="text">
+    <h3>TESTIMONIALS</h3>
+    <p>
+      The beautiful country of India is famous for many unique things, such as
+      Bollywood, the Taj Mahal, butter chicken, delicious Indian curry, and
+      more. But did you know India is home to some of the most exotic and
+      interesting Indian dog breeds? As the second most populous country, it’s
+      no surprise India is full of fascinating dog breeds: both native and
+      foreign. In fact, India has over 30 million stray dogs! The vast and
+      unique regions give us a prime breeding ground for exotic breeds to
+      develop.
+    </p>
+    <p>
+      But unlike breeds from smaller countries, Indian dogs seem to vary much
+      more in looks, personalities and special traits. That being said, here are
+      the 21 wonderful dog breeds of India that you’ve never heard of, but
+      really should.
+    </p>
+  </div>
+
+  <div class="slider-container">
+    <div class="slider">
+      <div
+        class="slide"
+        *ngFor="let slide of slides; let i = index"
+        [class.active]="i === currentIndex"
+      >
+        <img
+          *ngIf="i === currentIndex"
+          [src]="slide.image"
+          alt="{{ slide.caption }}"
+        />
+      </div>
+    </div>
+    <div class="controls">
+      <button (click)="prevSlide()">Prev</button>
+      <button (click)="nextSlide()">Next</button>
+    </div>
+  </div>
+</div>

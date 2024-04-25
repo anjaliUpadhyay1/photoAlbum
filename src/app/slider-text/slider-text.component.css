@@ -1,0 +1,47 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: auto;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  flex: 1;
+}
+
+.slide {
+  flex: 0 0 auto;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.container{
+  display: flex;
+  padding: 20px;
+  border: 1px solid black;
+  color: white;
+  background-color: rgb(68, 78, 78);
+}
+
+.text{
+  margin-right: 10px;
+}
+
+img{
+  height: 250px;
+  width: 350px;
+}
